@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto 3</title>
+
+    <style>
+        .seccion1{
+            display: flex;
+            flex-direction:row;
+            align-items: center;
+        }
+
+        #areaTrabajo{
+            border: 1px solid black; width: 400px; height: 300px; overflow-y: auto;
+        }
+
+        #nombre{
+            margin: 5px;
+        }
+
+        #btnAgregar{
+            background-color: rgb(70, 9, 225);
+            color: white;
+        }
+
+        #btnLimpiar{
+            background-color: rgb(70, 9, 225);
+            color: white;
+            margin: 5px;
+        }
+
+    </style>
+
+
+
+
+</head>
+<header>
+        <h1>Ordenar Array de Cadenas</h1>
+        <hr>
+        <h3>ingrese nombres en la caja de texto de trabajo y ordene este listado el cual aparecen
+            en el area de trabajo
+        </h3>
+
+    </header>
+<body>
+    <section class="seccion1">
+         <p>Nombre: </p>
+        <input id="nombre"  type="text" placeholder="ingrese su nombre">
+        <button id="btnAgregar">Agregar y ordenar nombre</button>
+    </section>
+
+    <section>
+        <article class="NombresOrdenados">
+            <h2>Nombres ordenados</h2>
+            <hr>
+            <div id="areaTrabajo">
+                <ul id="listaNombres">
+
+                </ul>
+            </div>
+            <button id="btnLimpiar">Limpiar</button>
+
+        </article>
+
+    </section>
+    <script src="reto3.js"></script>
+</body>
+</html>
